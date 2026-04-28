@@ -26,7 +26,7 @@ set "PY=%~dp0.venv\Scripts\python.exe"
 if not exist "%PY%" set "PY=python"
 
 echo.
-echo [2/3] Ejecutando programa OFUSCADO...
+echo [2/3] Ejecutando programa...
 powershell -NoProfile -ExecutionPolicy Bypass -File "scripts\run_with_cleanup.ps1" -Python "%PY%" -Entry "dist_obf\main.py"
 set "ERR=%ERRORLEVEL%"
 
